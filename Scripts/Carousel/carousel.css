@@ -1,0 +1,176 @@
+.carouselwrap{
+  height:100vh;
+  width: 100%;
+  pointer-events: none;
+  padding-top: 200px;
+}
+
+#carousel {
+  display: flex;
+  position: relative;
+  height: 400px;
+  overflow: none; 
+  margin-inline: 0%;
+  pointer-events: none;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 400ms, left 600ms, opacity 400ms, z-index 0s;
+  opacity: 1;
+  pointer-events: all;
+}
+#carousel div img {
+  height: 400px;
+  width: 600px;
+  transition: width 600ms, height 600ms;
+  -webkit-user-drag: none;
+}
+#carousel div.prev {
+  z-index: 11;
+  left: 20%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel img:hover {
+  cursor: pointer;
+}
+#carousel div.prev img {
+  height: 300px;
+  width: 500px;
+}
+#carousel div.selected {
+  z-index: 12;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 11;
+  left: 80%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  height: 300px;
+  width: 500px;
+}
+
+
+/*--------GamesCarosuel-------*/
+.gameTitle{
+  font-size: 80px;
+  font-weight: 800;
+  color: wheat;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+.carButtons{
+  pointer-events: all;
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
+  cursor: crosshair;
+  z-index: 15;
+}
+
+.gameName{
+  background: wheat;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 35px;
+  font-weight: 600;
+  padding: 5px;
+  pointer-events: all;
+  z-index: 12;
+
+  transition: transform 500ms;
+}
+.gameName a{
+  text-decoration: none;
+  color: black;
+}
+.gameName span{
+  display: none;
+}
+
+.gameDescript{
+  display: none;
+  background: wheat;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  margin-right: 1rem;
+}
+
+.card{
+  position: relative;
+}
+.card:hover .gameDescript{
+  color: Black;
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.card:hover .gameName{
+  transform: translateX();
+  transform: translateY(-21rem);
+}
+
+.card:hover .gameName span{
+  display: inline-block;
+  font-size: 18px;
+}
+.gameName span:hover{
+  color: aquamarine;
+}
+
+
+
+/*----------carosuel2-------*/
+#carouselJ {
+  display: flex;
+  position: relative;
+  height: 400px;
+  overflow: none;
+  margin-inline: 0%;
+  
+  pointer-events: none;
+}
+#carouselJ div {
+  position: absolute;
+  transition: transform 400ms, left 600ms, opacity 400ms, z-index 0s;
+  opacity: 1;
+  pointer-events: all;
+}
+#carouselJ div img {
+  height: 400px;
+  width: 600px;
+  transition: width 600ms, height 600ms;
+  -webkit-user-drag: none;
+}
+#carouselJ div.prevJ {
+  z-index: 11;
+  left: 20%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carouselJ img:hover {
+  cursor: pointer;
+}
+#carouselJ div.prevJ img {
+  height: 300px;
+  width: 500px;
+}
+#carouselJ div.selectedJ {
+  z-index: 12;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carouselJ div.nextJ {
+  z-index: 11;
+  left: 80%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carouselJ div.nextJ img {
+  height: 300px;
+  width: 500px;
+}

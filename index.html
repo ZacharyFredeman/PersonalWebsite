@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=""viewport content="width=device-width, initial-scale=1.0">
+        <title>Zachary Fredeman</title>
+        <link rel="stylesheet" href="./Scripts/BG/BGStyle.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./Scripts/Carousel/carousel.css">
+
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Play&family=VT323&display=swap" rel="stylesheet">
+
+
+        <script src="https://kit.fontawesome.com/4b8be2e1bc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!---BAckGround------->
+        <canvas id="canvas1"></canvas>
+
+        <!-----Navbar------>
+        <header class="navHeader">
+            <div>
+                <img src="./Images/logoz1.png" class="logo"/>
+            </div>
+
+            <button class="mobile-nav" aria-controls="navMobile" aria-expanded="true">
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <nav>
+                <ul id="navMobile" data-visible="false" class="nav-ul">
+                    <li class="active">
+                        <a href="#zach">
+                            <span aria-hidden="true">00</span>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <span aria-hidden="true">01</span>About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Games">
+                            <span aria-hidden="true">02</span>Games
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Projects">
+                            <span aria-hidden="true">03</span>Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span aria-hidden="true">04</span>Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <!--------Zach-------------->
+        <div class="home" id = "zach">
+            <div class="header-text">
+                <p>Zachary Fredeman</p>
+                <h1>Game Designer, Game Developer<span><br> Computer Scientist,</span> Web Developer</h1>
+            </div>
+        </div>
+
+
+
+        <!-------------AboutMe-------------->
+        <div id="about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/wooperskating2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="aboutP"> Continuously looking to learn and improve my skills. 
+                        At Marist College I began pursuing a degree in Computer Science to follow my passion and interest in technology. While there I gained knowledge in a wide variety of different disciplines in computer Science ranging from IT work,
+                         Software Development and Database Management to, Front End, Back End, 
+                         UI UX Design, and Website Development. 
+                         I've always possessed a strong passion for game design. 
+                         While pursuing my Degree in Computer Science at Marist, 
+                         I choose a focus in game design to gain experience in the development process of games. 
+                         I went on further to achieve a minor in games and emerging media. 
+                         To gain more experience I have participated in several Game jams,
+                         as well as learning Unity and UnReal Engine 5 in my spare time.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java, JS, C#, C++, Python, Sql, Html, Css,</li>
+                            <li><span>Engines</span><br> Unity, Unreal5</li>
+                            <li><span>Comp Sci</span><br>Robotics, Machine learning/AI, Source Control, Github, Agile Dev. </li>
+                            <li><span>Soft Skills</span><br> Adaptability, Problem solving, Leadership, Teamwork, Hardwork, Curiosity </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Game Jams</span>
+                                <br>Marist Game Jam - Development of ET 
+                                <br>Global Game Jam - Development of Little Trouble
+                                <br>Marist Game Jam - Development of Blades of Duality
+                                <br>Global Game Jam  - Development of Curios Cats
+                            </li>
+                            <li><span>Capping Project</span><br>Community <br> A community consists of a group of people that share the same interest. It could be a hobby, a talent, or a game that people enjoy playing. Much like a real community, ‘Community’ is a forum-based, web application that allows users to find and create posts specific to a particular topic. People with the same interests and backgrounds can peruse various discussion threads, leave comments, share other media, and upvote other users’ posts. Users also have the opportunity to create an account, which keeps track of their topic preferences and activity on the platform. Community has an easy-to-use UI and intuitive layout to ensure users can focus on the topics they are passionate for.
+                                <a href="https://github.com/CappingTeam-Community/Forum" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
+                            </li>
+                            <li><span>Misc</span><br>Halloween website <br>AI <br>Computer Graphics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Marist College</span><br> 2018-2022<br>Bachelors Computer Science<br><br>Minors in<br> Information Technology, Information Systems, Games and Emerging media</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--------GamesCarosuel-------------->
+        <div class="carouselwrap" id="Games">
+            <div class="gameCarousel">
+                <h1 class="gameTitle">Games</h1>
+
+                <div id="carousel" class="carousel">
+                <div id='item_3' class="prev">
+                    <img src="./Images/littletrouble.png">
+                    <h1 class="gameName">
+                        <a href="https://e-potapova.itch.io/little-trouble" target="_blank" rel="noopener noreferrer">
+                            Little Trouble <span><i class="fa fa-external-link"></i></span>
+                        </a>
+                    </h1>
+                    <p class="gameDescript">Explore the world you know from a different perspective -- how would a bug-sized person utilize their surroundings? 
+                        Find items and maneuver around this little world in search of a new friend and a new home.</p>
+                </div>
+            
+                <div id='item_4' class="selected card">
+                    <img src="./Images/curios cats.png">
+                    
+                    <h1 class="gameName">
+                        <a href="https://e-potapova.itch.io/curious-cats" target="_blank" rel="noopener noreferrer">
+                            Curios Cats <span><i class="fa fa-external-link"></i></span>
+                        </a>
+                    </h1>
+                    <p class="gameDescript">Gather up the cats as they escape and roam around the world! 
+                        Use your cats as resources and have them manipulate the terrain around them. 
+                        A sweet and short puzzle game with completely handmade art assets!
+                    </p>
+                </div>
+            
+                <div id='item_5' class="next">
+                    <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+                    <h1 class="gameName">
+                        <a href="https://github.com/crav12345/PhoenixFoundationFall2021" target="_blank" rel="noopener noreferrer">
+                            ET <span><i class="fa fa-external-link"></i></span>
+                        </a>
+                    </h1>
+                    <p class="gameDescript">Enter my Gmae description here</p>
+                </div>
+                </div>
+
+                <div class="carButtons">
+                    <button id="prev">Prev</button>
+                    <button id="next">Next</button>
+                </div>
+            </div>
+        </div>
+        
+    
+
+        <!--------ProjectsCarosuel-------------->
+        <div class="carouselwrap" id="Projects">
+            <div class="gameCarousel">
+                <h1 class="gameTitle">Projects</h1>
+
+                <div id="carouselJ" class="carouselJ">
+                <div id='item_3' class="prevJ">
+                    <img src="./Images/Halloween webiste.JPG">
+                    <h1 class="gameName">Halloween Website</h1>
+                    <p class="gameDescript">A fun little website for halloween. Created using React.</p>
+                </div>
+            
+                <div id='item_4' class="selectedJ card">
+                    <img src="./Images/capping (2).png">
+                    <h1 class="gameName">Capping project</h1>
+                    <p class="gameDescript">‘Community’ is a forum-based, web application that allows users to find and create posts specific to a particular topic. People with the same interests and backgrounds can peruse various discussion threads, leave comments, share other media, and upvote other users’ posts. Users also have the opportunity to create an account, which keeps track of their topic preferences and activity on the platform.
+                    </p>
+                </div>
+            
+                <div id='item_5' class="nextJ">
+                    <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+                    <h1 class="gameName">Lsoeresrsss</h1>
+                    <p class="gameDescript">Enter my Gmae description here</p>
+                </div>
+                </div>
+
+                <div class="carButtons">
+                    <button id="prevJ">Prev</button>
+                    <button id="nextJ">Next</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!--------------Contact Forum-------------->
+        <div class="contact" id="contact">
+            <div class="row">
+                <div class="contactR">
+                    <h2>Check out my socials</h2>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/zachary-fredeman/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ZacharyFredeman"  target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://itch.io/profile/firstdoor"  target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-itch-io"></i></a>
+                    </div>
+                    <a href="Images/ZacharyFredemanResume.pdf" download class="cvL" rel="noopener noreferrer">Download Resume</a>
+                </div>
+
+                <div class="contactL">
+                    <form onsubmit="sendEmail(); reset(); return false">
+                        <h2> Contact</h2>
+                        <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                        <textarea id="message" placeholder="How can i help youy" cols="30" rows="10"></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--------SCRIPTS-------------->
+        <script src="./Scripts/BG/BGCon.js"></script>
+        <script src="./Scripts/nav.js" defer></script>
+        <script src="./Scripts/Carousel/CarouselEdited.js"></script>
+        <script src="./Scripts/Carousel/CarouselEditedProjects.js"></script>
+
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gamil.com",
+                    Username : "mygmail",
+                    Password : "password",
+                    To : 'mygmail',
+                    From : document.getElementById("email").value,
+                    Subject : "This is the subject",
+                    Body : "Name: " + document.getElementById("fname").value + " " + document.getElementById("lname").value 
+                        + "<br> Email: " + document.getElementById("email").value 
+                        + "<br> Message: " + document.getElementById("message").value 
+
+                }).then(
+                message => alert("Thank you for reaching out :)")
+                );
+            }
+        </script>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+
+    </body>
+</html>
