@@ -57,10 +57,10 @@ const $$ = str => document.querySelectorAll(str);
 
 
             app.selected = selected;
-            let next = selected.nextElementSibling;// ? selected.nextElementSibling : selected.parentElement.firstElementChild;
-            var prev = selected.previousElementSibling; // ? selected.previousElementSibling : selected.parentElement.lastElementChild;
-            // var prevSecond = prev ? prev.previousElementSibling : selected.parentElement.lastElementChild;
-            // var nextSecond = next ? next.nextElementSibling : selected.parentElement.firstElementChild;
+            let next = selected.nextElementSibling ? selected.nextElementSibling : selected.parentElement.firstElementChild;
+            var prev = selected.previousElementSibling ? selected.previousElementSibling : selected.parentElement.lastElementChild;
+            //var prevSecond = prev ? prev.previousElementSibling : selected.parentElement.lastElementChild;
+            //var nextSecond = next ? next.nextElementSibling : selected.parentElement.firstElementChild;
 
             selected.className = '';
             selected.classList.add("selected");
@@ -69,10 +69,10 @@ const $$ = str => document.querySelectorAll(str);
             app.carousel.removeClass(prev).classList.add('prev');
             app.carousel.removeClass(next).classList.add('next');
 
-            // app.carousel.removeClass(nextSecond).classList.add("nextRightSecond");
-            // app.carousel.removeClass(prevSecond).classList.add("prevLeftSecond");
+             //app.carousel.removeClass(nextSecond).classList.add("nextRightSecond");
+             //app.carousel.removeClass(prevSecond).classList.add("prevLeftSecond");
 
-            // app.carousel.nextAll(nextSecond).forEach(item=>{ item.className = ''; item.classList.add('hideRight') });
+             //app.carousel.nextAll(nextSecond).forEach(item=>{ item.className = ''; item.classList.add('hideRight') });
             // app.carousel.prevAll(prevSecond).forEach(item=>{ item.className = ''; item.classList.add('hideLeft') });
 
         },
